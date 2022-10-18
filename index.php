@@ -1,12 +1,12 @@
 <?php
-
-        $page = "home";
-
+    $page=$_REQUEST['page'];
+    $titre=$_REQUEST['titre'];
+    $css=$_REQUEST['css'];
+    if (($page=='')||(substr($page,0,7)=='http://')) {
+        $page = "index.php";
         $titre = "Introduction";
-
-        $css="css1";
-
-
+        $css = "css1";
+    }
 
 ?>
 <html lang="fr">
